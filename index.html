@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*=============reset=============*/
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'YUN-BONG-GIL';
+}
+ul {
+    list-style: none;
+}
+a {
+    display: block;
+    color:#fff;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'YUN-BONG-GIL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/YUN-BONG-GIL.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+/*=============layout=============*/
+#wrap {
+    max-width:1920px;
+    width:100%;
+    margin:auto;
+    background:gainsboro;
+}
+    
+
+
+/*=============header=============*/
+#header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height:100px;
+    padding:0 20px;
+    background-color: black;
+}
+
+#gnb {
+    display: flex;
+}
+#gnb li {
+    font-size:35px;
+    margin-left:70px;
+}
+#gnb li:hover {
+    position: relative;
+}
+#gnb li:hover a {
+    color:gray;
+}
+
+audio {
+    display: none;
+}
+/*=============container=============*/
+#container .section1 {
+    position: relative;
+    text-align: center;
+    }
+img:hover {
+    filter: grayscale(100%);
+}
+
+#container .section2 {
+    /* padding:20px 0; */
+    text-align: center;
+    color:whitesmoke;
+    font-size:35px;
+    }
+
+#container .Information {
+    padding:15px 0;
+    background-color: black;
+}
+
+#info .name {
+    font-size:50px;
+    font-weight: bold;
+}
+#info .awards {
+    font-size:30px;
+    font-weight: bold;
+}
+
+#info .years {
+    font-size:26px;
+    font-weight: bold;
+}
+
+p {
+    color:black;
+    font-size:25px;
+}
+#visual .text-overlay {
+    position: absolute;
+    top:7.7%; /* 텍스트를 수직 중앙에 위치시키기 위해 이미지의 50% 높이에 배치 */
+    left: 50%; /* 텍스트를 수평 중앙에 위치시키기 위해 이미지의 50% 너비에 배치 */
+    transform: translate(-50%, -50%); /* 텍스트를 정확한 중앙으로 이동 */
+    color:white; /* 글자 색상 */
+    font-size: 50px; /* 글자 크기 */
+    }
+
+#container .section3 {
+    /* padding:20px 0; */
+    text-align: center;
+    color:whitesmoke;
+    font-size:35px;
+    }
+    
+#container .part {
+    padding:15px 0;
+    background-color: black;
+}
+
+#cast .person {
+    font-size:30px;
+    font-weight: bold;
+}
+
+#container .section4 {
+    /* padding:20px 0; */
+    text-align: center;
+    color:whitesmoke;
+    font-size:35px;
+    }
+  
+#container .moviecut {
+    padding:15px 0;
+    background-color: black;
+}
+
+#clip .preview {
+    font-size:30px;
+    font-weight:bold;
+}
+
+#container .section5 {
+    /* padding:20px 0; */
+    text-align: center;
+    color:whitesmoke;
+    font-size:35px;
+    }
+
+#container .stillcut {
+    padding:15px 0;
+    background-color: black;
+}
+
+#photo .making {
+    font-size:30px;
+    font-weight:bold;
+}
+
+#container .section6 {
+    /* padding:20px 0; */
+    text-align: center;
+    color:whitesmoke;
+    font-size:35px;
+    }
+
+#container .score {
+    padding:15px 0;
+    background-color: black;
+}
+
+#review .own {
+    font-size:30px;
+    font-weight:bold;
+}
+
+#review .my {
+    font-size: 30px;
+}
+
+/*=============footer=============*/
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:80px;
+    padding:0 0 0 20px;
+    background-color:black;
+}
+#footer .logo-bottom img {
+    width:60px;
+}
+#footer p {
+    color:whitesmoke;
+    font-size:14px;
+    padding: 0 20px 0 0;
+}
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div style="font-family:'YUN-BONG-GIL';" id="header">
+            <a href="index.html"><img src=img/글씨.png width="100px"></a>
+            <ul id="gnb">
+                <li><a href="#info">기본 정보</a></li>
+                <li><a href="#cast">감독/출연</a></li>
+                <li><a href="#clip">무비클립</a></li>
+                <li><a href="#photo">포토</a></li>
+                <li><a href="#review">평점/리뷰</a></li>
+            </ul>
+        </div>
+    <div id="container">
+        <div id="visual" class="section1">
+            <img src="img/메인.jpg" width="1690px">
+            <audio src="audio/사도.mp3" controls autoplay loop></audio>
+            <div class="text-overlay">임금도 싫고, 권력도 싫소.<br> 내가 원한 것은 아버지의 따뜻한 눈길 한 번, <br> 다정한 말 한 마디였소...</div>
+            
+
+        <div id="info" class="section2">
+            <div class="Information">기본 정보</div><br>
+            <p class="name">영화 '사도'
+            <p>The Throne</p><br>
+            <img src="img/포스터.jpg">&nbsp;<img src="img/포스터2.jpg" width="300px" height="428px">&nbsp;<img src="img/포스터3.jpg" width="300px" height="428px">
+            <br>
+            <p>개봉 : 2015.09.16.</p>
+            <p>등급 : 12세 관람가 </p>
+            <p>장르 : 드라마 </p>
+            <p>국가 : 대한민국 </p>
+            <p>러닝타임 : 125분 </p>
+            <p>배급 : ㈜쇼박스</p>
+            <br>
+            <p class="awards">수상 내역</p><br>
+            <p class="years">2015</p>
+            <p>35회 한국영화평론가협회상(최우수 작품상, 각본상, 음악상, 영평10선)</p>
+            <p>36회 청룡영화상(남우주연상, 여우조연상, 촬영상, 조명상, 음악상)</p>
+            <p>52회 대종상 영화제(여우조연상)</p>    
+            
+            <br>
+            <p class="years">2016</p>   
+            <p>10회 아시아 필름 어워즈(최우수 의상상)</p>
+            <p>21회 춘사국제영화제(각본상, 남우주연상)</p>
+            <p>47회 인도국제영화제(심사위원특별상)</p>
+            <p>52회 백상예술대상(영화 대상)</p>
+        </div><br><br><br>
+        <div id="cast" class="section3">
+            <div class="part">감독/출연</div><br>
+            <p class="person">감독</p><br>
+            <img src="img/이준익.jpg" width="355px">
+            <p class="person">이준익</p>
+            <P>출생 : 1959. 9. 21. 서울특별시</P>
+            <p>소속 : 씨네월드(대표) </p>
+            <P>학력 : 세종대학교 동양화 중퇴</P>
+            <p>대표 작품 : 영화 '동주', '박열', '자산어보' 등 </p>
+            <br>
+            <p class="person">배우</p><br>
+            <img src="img/유아인.jpg" width="355px" height="469.49px">&nbsp;&nbsp;<img src="img/사도세자역.jpg" width="355px" height="469.49px">
+            <p class="person">유아인</p>
+            <p>(사도세자역)</p>
+            <p>출생 : 1986. 10. 06. 대구광역시</p>
+            <p>소속 : United Artists Agency</p>
+            <p>학력 : 건국대학교 예술학</p>
+            <p>대표 작품 : '성균관스캔들', '베테랑', '밀회' 등</p><br>
+            <img src="img/송강호.jpg" width="355px" height="469.49px">&nbsp;&nbsp;<img src="img/영조역.jpg" width="355px" height="469.49px">
+            <p class="person">송강호</p>
+            <p>(영조역)</p>
+            <p>출생 : 1967. 1. 17. 경상남도 김해</p>
+            <p>소속 : 써브라임</p>
+            <p>학력 : 부산경상대 연예학 중퇴</p>
+            <p>대표 작품 : '기생충', '택시운전사', '변호인' 등</p><br>
+            <img src="img/문근영.jpg" width="355px" height="469.49px">&nbsp;&nbsp;<img src="img/혜경궁홍씨역.jpg" width="355px" height="469.49px">
+            <p class="person">문근영</p>
+            <p>(혜경궁 홍씨역)</p>
+            <p>출생 : 1987. 05. 06. 광주광역시</p>
+            <p>소속 : 크리컴퍼니</p>
+            <p>학력 : 성균관대학교 국어국문학</p>
+            <p>대표 작품 : '신데렐라 언니', '가을동화', '바람의 화원' 등</p>
+            </div>
+        </div><br><br><br>
+
+        <div id="clip" class="section4">
+            <div class="moviecut">무비클립</div><br>
+            <p class=preview>예고편</p><br>
+            <video width="400px" controls loop>
+                <source src="video/티저 예고편_1.mp4" type="video/mp4">
+                </video>
+            <video width="400px" height="225px" controls loop>
+                <source src="video/캐릭터 예고편_1.mp4" type="video/mp4"></video>
+            <video width="400px" height="225px" controls loop>
+                    <source src="video/메인예고편_1.mp4" type="video/mp4">
+                </video><br><br>
+
+            <p class=preview>하이라이트</p><br>
+            <video width="400px"controls loop>
+                <source src="video/중전이라 불리지 못한 어머니_f.mp4" type="video/mp4">
+                </video>
+
+                <video width="400px"controls loop>
+                    <source src="video/만조상해원경_f.mp4" type="video/mp4">
+                    </video>
+
+            <video width="400px" controls loop>
+                <source src="video/아버지의 선택_f.mp4" type="video/mp4">
+            </video>
+        </div><br><br><br>
+
+        <div id="photo" class="section5">
+            <div class="stillcut">포토</div><br>
+            <p class="making">스틸컷</p><br>
+            <img src="img/스틸컷1.jpg" width="300px">&nbsp;&nbsp;<img src="img/스틸컷5.jpg" width="300px" height="198.98px">&nbsp;&nbsp;<img src="img/스틸컷7.jpg" width="300px" height="198.98px">&nbsp;&nbsp;<img src="img/스틸컷8.jpg" width="300px" height="198.98px"><br><br>
+            <p class="making">비하인드</p><br>
+            <img src="img/메이킹2.jpg" width="300px" height="198.98px">&nbsp;&nbsp;<img src="img/메이킹3.jpg" width="300px" height="198.98px">&nbsp;&nbsp;<img src="img/메이킹5.jpg" width="300px" height="198.98px">&nbsp;&nbsp;<img src="img/메이킹8.jpg" width="300px" height="198.98px"><br><br>
+
+            <div id="review" class="section6">
+                <div class="score">평점/리뷰</div><br>
+                <p class="own">실제 관람객 평점 및 만족도</p><br>
+                <img src="img/관람객 평점.png">&nbsp;&nbsp;<img src="img/나이별 만족도.png" height="294px"><br><br>
+                <p class="own">관람 추이</p><br>
+                <img src="img/성별 관람추이.png">&nbsp;&nbsp;<img src="img/나이별 관람추이.png" height="314px"><br><br>
+                <p class="own">내가 남기는 후기</p><br>
+                <p>
+                    <big><big><big>"별점 5개가 전혀 아깝지 않은 영화"</big></big></big><br><br></p>
+                <img src="img/별점.png" width="40px">&nbsp;<img src="img/별점.png" width="40px">&nbsp;<img src="img/별점.png" width="40px">&nbsp;<img src="img/별점.png" width="40px">&nbsp;<img src="img/별점.png" width="40px"><br><br>
+                <p class="my">연출, 연기, 음향. 모든 것이 완벽하여 몰입이 잘 되었으며 <br>
+                              아버지가 아닌 조선의 '왕'으로서, 영조는 사도 세자를 완벽한 왕으로 만들기 위해 노력하지만,<br>
+                              사도세자가 진심으로 바란 것은 왕, 권력 등이 아닌 아버지의 사랑이였다는 점을 보여줌으로써<br>
+                              부모가 자식을 위한 길이 무엇인 지 다시 한 번 생각해 볼 수 있는 계기를 제공해준다.</p><br>
+
+                <div id="footer">
+                    <a href="#" class="logo-bottom">
+                        <img src="img/글씨.png" alt="logo"></a>
+                    <p>010-1234-5678
+                    <br>lhjoo99@naver.com
+                    <br>copyright&copy;HEEJOO
+                    </p>
+                </div>
+</html>
+
